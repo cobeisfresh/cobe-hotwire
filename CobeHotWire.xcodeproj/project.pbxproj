@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DD239DB92CF72D2C00D4B723 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = DD239DB82CF72D2C00D4B723 /* HotwireNative */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DD239D9F2CF72CE500D4B723 /* CobeHotWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobeHotWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD239DB92CF72D2C00D4B723 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = CobeHotWire;
 			packageProductDependencies = (
+				DD239DB82CF72D2C00D4B723 /* HotwireNative */,
 			);
 			productName = CobeHotWire;
 			productReference = DD239D9F2CF72CE500D4B723 /* CobeHotWire.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = DD239D962CF72CE500D4B723;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD239DB72CF72D2C00D4B723 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DD239DA02CF72CE500D4B723 /* Products */;
 			projectDirPath = "";
@@ -335,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD239DB72CF72D2C00D4B723 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD239DB82CF72D2C00D4B723 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD239DB72CF72D2C00D4B723 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD239D972CF72CE500D4B723 /* Project object */;
 }
